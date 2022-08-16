@@ -1,0 +1,260 @@
+:root{
+    --primary-blue:#0095F6;
+    --bg-gray:rgb(250,250,250);
+    --fb-blue: #385185;
+    --border-ash: #DBDBDB;
+    --gray-txt: rgb(142,142,142);
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    border: none;
+}
+
+
+#root{
+    background-color: var(--bg-gray);
+}
+
+.phpic-form-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-blk-flex{
+    display: flex;
+    justify-content: center;
+}
+
+.phpic{
+    margin-left: 30px;
+}
+
+.form-cont{
+    margin-top: 40px;
+}
+
+.btn-blue{
+    background-color: var(--primary-blue);
+    color: white;
+    font-weight: 500;
+}
+
+.form{
+    display: flex;
+    flex-flow: column;
+    row-gap: 6px;
+}
+
+.form-cont{
+    width: 100%;
+    width: 348px;
+
+}
+
+.top-form{
+    background-color: white;
+    border: 1px solid var(--border-ash);
+    padding: 6px 40px 20px 40px;
+}
+
+.logo img{
+    height: 65px;
+    width: 170px;
+    margin: 32px 0px;
+}
+
+.logo-sign img{
+    margin: 32px 0px 0px 0px;
+}
+
+.form input{
+    height: 38px;
+    font-size: 12px;
+    padding:  9px;
+    border-radius: 3px;
+    border: 1px solid var(--border-ash);
+    background-color: var(--bg-gray);
+}
+
+.login-btn{
+    margin: 10px 0px;
+    padding: 5px 0px;
+    font-size: 13px;
+    border-radius: 4px;
+}
+
+.full-width{
+    width: 100%;
+}
+
+.signup-btn{
+    font-size: 14px;
+}   
+
+.signup-btn svg{
+    font-size: 20px;
+    margin-bottom: 3px;
+
+}
+
+.or-w-dash {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-top: 4px;
+}
+
+.or-w-dash div{
+    border-top: 0.1px solid var(--border-ash);
+    width: 40%;
+    height: 0px;
+
+}
+.or-w-dash span{
+    color: #8E91B1;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.fb-login{
+    color: var(--fb-blue);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.fb-login svg{
+    font-size: 19px;
+    margin-bottom: 3px;
+}
+
+.forgot-pass{
+    font-size: 12px;
+    color: var(--fb-blue);
+    margin-top: 6px;
+}
+
+.alertmsg{
+    font-size: 13px;
+    color: red;
+}
+
+.middle-form{
+    margin-top: 11px;
+    background-color: white;
+    border: 1px solid var(--border-ash);
+    width: 100%;
+    padding: 0px 40px;
+    padding: 20px 0px;
+
+}
+
+.middle-form span{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#sign-up a{
+    color: var(--primary-blue);
+    margin-left: 5px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.gray-bold{
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--gray-txt);
+    line-height: 1.2;
+    margin: 5px 0px;
+}
+
+.gray-normal{
+    font-size: 12px;
+    color: var(--gray-txt);
+    margin-top: 10px;
+}
+
+.bottom-form{
+    padding: 0px 0px 10px 0px;
+}
+
+.bottom-form img{
+    width: 133px;
+    height: 38px;
+    margin: 0px 4px;
+}
+
+.bottom-form div{
+    margin: 15px 0px;
+    font-size: 14px;
+}
+
+.related{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 3px;
+    flex-flow: wrap;
+
+}
+
+.phpic img{
+    height: 627px;
+    width: 360px;
+}
+
+.related div{
+    font-size: 12px;
+    font-family:  'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.related a{
+    color: #949393;
+    text-decoration: none;
+}
+.entertainment{
+    margin-top: 0px;
+}
+.lang svg{
+    margin-left: 5px;
+}
+.lang-copyr{
+    margin-top: 7px;
+}
+
+.bottomcont{
+    padding: 40px 0px;
+}
+
+/**************************************************   Media Query   **********************************************/
+
+@media (max-width:875px) {
+    .phpic img{
+        display: none;
+    }   
+
+
+}
+
+@media (max-width:450px) {
+    
+    .phpic-form-cont{
+       display: block;
+    }
+
+    .form-cont{
+        background-color: var(--bg-gray);
+        width: 100%;
+        height: 100vh;
+        margin-top: 0px;
+    }
+
+    .top-form,.bottom-form, .middle-form{
+        border: none;
+        background-color: var(--bg-gray);
+    }
+}
