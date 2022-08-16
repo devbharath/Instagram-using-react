@@ -22,7 +22,7 @@ function NavBar(props) {
                 <div className={nav.icon}><ri.RiCompassLine/></div>
                 <div className={nav.icon}><ai.AiOutlineHeart/></div>
                <div><div className={nav.profile}><img src={instagram_logo} alt='hiii'/>
-               <div  className={nav.dropdown}>
+               <div style={{display:"none"}} className={nav.dropdown}>
                   <div><md.MdAccountCircle/>Profile</div>
                   <div><fi.FiBookmark/><Link to='/SavedPosts' state={saved}>Saved</Link></div>
                 </div>
